@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car & Bike Rental</title>
+    
+</head>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .background-video {
+        position: relative;
+        overflow: hidden;
+        height: 100vh;
+    }
+
+    video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+    }
+
+    .content {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        color: white;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.2em;
+        margin-bottom: 30px;
+    }
+
+    .cta-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        border-radius: 5px;
+        background-color: #2980b9;
+        transform: scale(1.1);
+    }
+
+    .cta-button:hover {
+        background-color: #2980b9;
+    }
+
+    .sam {
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 360px;
+        width: 100%;
+        
+        
+    }
+
+    .sum {
+        height: 410px;
+        width: 300px;
+        background-color: antiquewhite;
+        flex-wrap: wrap;
+    }
+
+    .imm {
+        width: 100%;
+        height: 200px; /* Fix the percentage value */
+    }
+
+    .car {
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .er {
+        height: 80px;
+        width: 33%;
+    }
+
+    .container {
+        display: flex;
+        gap: 2px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: rgb(235, 241, 241);
+        height: 200px;
+        margin-top: 100px;
+    }
+
+    .mm {
+        float: left;
+        height: 50%;
+        width: 50px;
+        margin-top: 20px;
+    }
+
+    .cont {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 10px;
+        height: 100px;
+        margin-top: 80px;
+        background-color: rgb(235, 241, 241);
+    }
+
+    .aa {
+        height: 100px;
+        width: 50%;
+    }
+
+    .pp {
+        float: left;
+        height: 50%;
+        width: 50px;
+        margin-top: 20px;
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-info {
+        flex: 2;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .footer-info h3 {
+        margin-bottom: 10px;
+    }
+
+    .footer-social {
+        flex: 1;
+        text-align: right;
+    }
+
+    .social-icons {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .social-icons li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .social-icons a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5em;
+    }
+</style>
+<body>
+    <div class="background-video">
+        <video autoplay muted loop>
+            <source src="./rem2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+            <h1>Welcome to sumeet car Rental Services</h1>
+            <p>Explore our wide range of cars and bikes for rent. Whether you need a car for a road trip or a bike for a quick ride, we've got you covered.</p>
+            <h1>Andi mandi chandi jo car book gardain tyo mz randi</h1>
+        </div>
+    </div>
+    <section id="rental-options">
+        <h2>Rental Options</h2>
+    </section>
+    <div class="sam">
+        <div class="sum ds1">
+            <img class="imm img1" src="https://imgd.aeplcdn.com/370x208/n/cw/ec/130591/fronx-exterior-right-front-three-quarter-109.jpeg?isig=0&q=80">
+            <p class="car">Fronx</p>
+            <ul>
+                <li>Car name :- Fronx</li>
+                <li>Brand :- ford</li>
+                <li>Charge per day :- rs2500</li>
+                <button class="cta-button">Rent</button>
+            </ul>
+        </div>
+        <div class="sum ds2">
+            <img class="imm img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnWuioas00QcSYIhWigR19DHVotujk_OAZJw&usqp=CAU">
+            <p class="car">vitara</p>
+            <ul>
+                <li>Car name :- Vitara</li>
+                <li>Brand :- ford</li>
+                <li>Charge per day :- rs3500</li>
+                <button class="cta-button">Rent</button>
+            </ul>
+        </div>
+        <div class="sum ds3">
+            <img class="imm img3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIkaANve1yJjit_lMP08zeISF4hL691a8OjI2rLU-7e2fBThJ0kORSN7of0rgD6MoV4a8&usqp=CAU">
+            <p class="car">Fronx</p>
+            <ul>
+                <li>Car name :- Audi</li>
+                <li>Brand :- Audi</li>
+                <li>Charge per day :- rs5000</li>
+                <button class="cta-button">Rent</button>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="er sd1">
+            <img class="mm" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDnhwT9W0ROOdT5dDLpV-hrjGuNBc3UZZVAuzVFIu_guzXDocYS2otK5xXW7LuUtqCs6E&usqp=CAU">
+            <h2>Flexible</h2>
+            <p>Cancel or change most bookings for free up to 48 hours before pick-up</p>
+        </div>
+        <div class="er sd2">
+            <img class="mm" src="https://thumbs.dreamstime.com/z/hand-holding-magnifying-glass-icon-vector-flat-search-symbol-looking-concept-color-186421102.jpg">
+            <h2>No hidden fees</h2>
+            <p>Know exactly what you are paying</p>
+        </div>
+        <div class="er sd3">
+            <img class="mm" src="https://m.media-amazon.com/images/I/71VuAdO0JVL._AC_SL1500_.jpg">
+            <h2>Price match Guarantee</h2>
+            <p>Found the same deal for less? We will match the price</p>
+        </div>
+    </div>
+    <div class="cont">
+        <div class="aa sa1">
+            <img class="pp" src="https://thumbs.dreamstime.com/z/hand-holding-magnifying-glass-icon-vector-flat-search-symbol-looking-concept-color-186421102.jpg">
+            <h2>Clean cars. Flexible booking, socially distant rental counter</h2>
+            <p>We are working with our partners to keep you safe and in the driving seat.</p>
+        </div>
+        <div class="aa sa2">
+            <img class="pp" src="https://m.media-amazon.com/images/I/71VuAdO0JVL._AC_SL1500_.jpg">
+            <h2>Subscribe for exclusive offers and deals</h2>
+            <p>Found the same deal for less? We will match the price</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content"></div>
+        <div class="footer-info">
+            <h3>Contact Us</h3>
+            <p>sumeet yadav<br>new baneshwar</p>
+            <p>Email: sumeety693@gmail.com<br>Phone: 9819962922</p>
+        </div>
+        <div class="footer-social">
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                <li><a href="" target="_blank">Twitter</a></li>
+                <li><a href="https://instagram.com/" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
